@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h4 {
+    color: #0c0b0b;
+}
