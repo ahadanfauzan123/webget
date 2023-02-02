@@ -29,8 +29,6 @@ function Team() {
         <div className='min-h-[calc(100vh+240px)] w-full flex flex-col items-end justify-end'>
             <div className='min-h-[calc(100vh+120px)] w-full flex flex-col items-center space-y-6'>
                 {/* header */}
-                <h1 className='text-6xl font-bold text-center pt-8'>Meet our Team</h1>
-                <div className='h-1 w-1/3 bg-gray-300'></div>
                 {/* cards */}
                 <div className='flex-1 w-screen'>
                   <Swiper
