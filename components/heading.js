@@ -4,8 +4,8 @@ function Heading() {
   return (
     <div className='min-h-screen'>
         {/* section 1 */}
-        <div className='w-[85%] mx-auto  h-[calc(100vh-120px)] flex items-center justify-between'>
-            <div className='flex-[0.8]  flex flex-col space-y-4 justify-start items-start'>
+        <div className='w-[85%] mx-auto h-screen flex items-center justify-between'>
+            <div className='flex-[0.8] flex flex-col space-y-4 justify-start items-start'>
                 <h1 className='text-5xl font-bold'>WEBGET <span className='text-blue-400'>,GET AMAZING WEB</span></h1>
                 <p className='w-[80%] text-lg justify-start'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde porro iure veniam inventore commodi iusto facilis saepe accusamus nesciunt impedit! Magni deleniti deserunt vero odit. Nam, minus minima. Magnam.

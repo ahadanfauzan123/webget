@@ -19,22 +19,22 @@ function Contact() {
             </div>
             {/* cards */}
             <div className='flex-[0.5] h-[300px] flex flex-col space-y-4 items-center'>
-                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2'>
+                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2 hover:bg-[#535151] transition-all ease-linear duration-300 cursor-pointer'>
                 {/* fiverr */}
                 <h1 className='text-green-400 flex-[0.5]'><SiFiverr className='text-[65px]'/></h1>
                 <h1 className='text-lg font-semibold text-gray-300'>fiverr/webgetStore</h1>
                 </div>
-                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2'>
+                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2 hover:bg-[#535151] transition-all ease-linear duration-300 cursor-pointer'>
                     {/* freelancer */}
                     <h1 className='text-blue-400 flex-[0.5]'><SiFreelancer className='text-[50px]'/></h1>
                     <h1 className='text-lg font-semibold text-gray-300'>freelancer/webget</h1>
                 </div>
-                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2'>
+                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2 hover:bg-[#535151] transition-all ease-linear duration-300 cursor-pointer'>
                     {/* intagram */}
                     <h1 className='text-pink-400 flex-[0.5]'><AiOutlineInstagram className='text-[40px]'/></h1>
                     <h1 className='text-lg font-semibold text-gray-300'>@webgetid_</h1>
                 </div>
-                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2'>
+                <div className='w-[400px] h-[100px] bg-[#2e2c2c] rounded-xl flex items-center px-8 space-x-2 hover:bg-[#535151] transition-all ease-linear duration-300 cursor-pointer'>
                     {/* email */}
                     <h1 className='text-gray-400 flex-[0.5]'><CgMail className='text-[40px]'/></h1>
                     <h1 className='text-lg font-semibold text-gray-300'>webget@gmail.co.id</h1>
