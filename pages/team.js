@@ -32,29 +32,29 @@ function Team() {
                 {/* cards */}
                 <div className='flex-1 w-screen'>
                   <Swiper
-                  slidesPerView={1.5}
+                  slidesPerView={1.25}
                   spaceBetween={60}
                   centeredSlides={false}
                   slidesPerGroupSkip={1}
-                  grabCursor={true}
+                  grabCursor={false}
                   keyboard={{ enabled:true, }}
-                  scrollbar={true}
+                  scrollbar={false}
                   autoplay={{ 
-                    delay:5000,
+                    delay:3000,
                     disabledOnInteract:false
                    }}
-                   loop={true}
+                   loop={false}
                   pagination={{ 
                     clickable:true,
                    }}
                   modules={[Autoplay,Keyboard,Scrollbar, Navigation,Pagination]}
-                  className='relative h-[500px] w-[80%] overflow-y-auto mt-20'>
-                    <SwiperSlide className='bg-[#2c2a2a] flex items-center justify-center'>
-                      {/* image */}
+                  className='relative h-[500px] w-[80%] mt-20 cursor-grab'>
+                    <SwiperSlide className='flex flex-col space-y-3 items-center justify-center cursor-default'>
                       <h1 className='text-8xl font-bold'>WEBGET</h1>
+                      <h3 className='text-lg font-semibold'>meet our team</h3>
                     </SwiperSlide>
                     {/* ahadan */}
-                    <SwiperSlide className='bg-[#2c2a2a] flex'>
+                    <SwiperSlide className='bg-[#2c2a2a] flex rounded-[25px]'>
                       {/* image */}
                         <Image 
                           src={Rose}
@@ -69,7 +69,7 @@ function Team() {
                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis ab cupiditate eius maxime minima reprehenderit expedita, voluptatem iure iusto.</p>
                         </div>
                         {/* button */}
-                        <div className=' h-[40%] w-[400px] flex space-x-4 mt-[20px]'>
+                        <div className='z-10 h-[40%] w-[400px] flex space-x-4 mt-[20px]'>
                         <div className=' flex items-center justify-center h-[60px] w-[60px] rounded-md bg-[#141313]'>
                           <a href=""><AiFillGithub className='text-2xl'/></a>
                         </div>
@@ -80,10 +80,11 @@ function Team() {
                           <a href=""><BiGlobe className='text-4xl'/></a>
                         </div>
                       </div>
+                      <div className='absolute bottom-[-30px] left-[-15px] h-[270px] w-[270px] rounded-[50%] bg-gradient-to-tr from-red-400 to-orange-400'/>
                       </div>
                     </SwiperSlide>
                     {/* syadda */}
-                    <SwiperSlide className='bg-[#2c2a2a] flex'>
+                    <SwiperSlide className='bg-[#2c2a2a] flex rounded-[25px]'>
                       {/* image */}
                         <Image 
                           src={Lisa}
@@ -109,10 +110,11 @@ function Team() {
                           <a href=""><BiGlobe className='text-4xl'/></a>
                         </div>
                       </div>
+                      
                       </div>
                     </SwiperSlide>
                     {/* justin */}
-                    <SwiperSlide className='bg-[#2c2a2a] flex'>
+                    <SwiperSlide className='bg-[#2c2a2a] flex rounded-[25px]'>
                       {/* image */}
                         <Image 
                           src={Jennie}
@@ -141,7 +143,7 @@ function Team() {
                       </div>
                     </SwiperSlide>
                     {/* rafa */}
-                    <SwiperSlide className='bg-[#2c2a2a] flex'>
+                    <SwiperSlide className='bg-[#2c2a2a] flex rounded-[25px]'>
                       {/* image */}
                         <Image 
                           src={Jisoo}
