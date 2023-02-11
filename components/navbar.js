@@ -1,6 +1,7 @@
 import React from 'react'
 import {SiDiscord,SiInstagram,SiFiverr} from 'react-icons/si'
 import {BsFillGearFill} from 'react-icons/bs'
+import {BiMenuAltRight} from 'react-icons/bi'
 import {MdPeopleOutline,MdOutlinePriceChange,MdOutlinePermContactCalendar} from 'react-icons/md'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -34,20 +35,8 @@ function Navbar() {
         <Link href={'./'}>
           <h1 className='font-bold text-[28px]'>web<span className='text-blue-400'>get</span></h1>
         </Link>
-        {/* buttons */}
-        {/* <div className=' h-[50%] w-[400px] flex justify-center space-x-4'>
-          <div className=' flex items-center justify-center h-full w-[60px] rounded-md shadow-sm shadow-gray-600 bg-gray-700'>
-            <a href=""><SiDiscord className='text-2xl'/></a>
-          </div>
-          <div className=' flex items-center justify-center h-full w-[60px] rounded-md shadow-sm shadow-gray-600 bg-gray-700'>
-            <a href=""><SiInstagram className='text-2xl'/></a>
-          </div>
-          <div className=' flex items-center justify-center h-full w-[60px] rounded-md shadow-sm shadow-gray-600 bg-gray-700'>
-            <a href=""><SiFiverr className='text-4xl'/></a>
-          </div>
-        </div> */}
         {/* lists */}
-        <div className='h-full flex-1 flex items-center justify-end'>
+        <div className='h-full flex-1 sm:hidden lg:flex items-center justify-end'>
           <ul className='w-[90%] flex justify-end space-x-12 font-bold text-[18px] text-gray-400'>
             <li className='flex items-center space-x-1 hover:text-green-300 transition-all cursor-pointer delay-75'>
                 <MdOutlinePriceChange className='-rotate-45 text-xl'/>
@@ -70,6 +59,10 @@ function Navbar() {
               <p>Contact</p>
             </li>
           </ul>
+        </div>
+        {/* when in then smaller screen */}
+        <div className='sm:inline-flex lg:hidden'>
+          <BiMenuAltRight className='h-10 w-10'/>
         </div>
       </div>
     </div>

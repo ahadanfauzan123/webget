@@ -1,15 +1,16 @@
 import React from 'react'
 import { BsCheckCircleFill } from 'react-icons/bs'
 import { MdCancel } from 'react-icons/md'
+import SwiperCard from './SwiperCard'
 
 function Pricing() {
   return (
-    <div className='mt-10 w-[80%] h-screen mx-auto flex flex-col items-center space-y-8 pt-4'>
+    <div className='mt-10 w-[80%] h-screen mx-auto flex flex-col items-center lg:space-y-8 pt-4'>
         <div className='flex flex-col items-center gap-y-3'>
             <h1 className='text-5xl font-bold'>Pricing</h1>
         </div>
         {/* cards */}
-        <div className='flex-1 w-full flex items-center justify-between'>
+        <div className='sm:hidden lg:inline-flex flex-1 w-full flex items-center justify-between'>
             <div className='h-full w-[30%] bg-[#151825] rounded-2xl flex flex-col items-center gap-y-3 py-5 '>
                 <h1 className='text-3xl font-semibold mb-3'>STARTER</h1>
                 <div className='flex flex-col h-[80px]'>
@@ -117,6 +118,11 @@ function Pricing() {
                 <button className='bg-gradient-to-r from-blue-800 to-gray-700 px-5 py-2 rounded-xl font-semibold'>Learn More</button>
                 
             </div>
+        </div>
+        {/* cards in the smaller screen */}
+        <div className='lg:hidden flex-1 w-screen'>
+            {/* cards */}
+            <SwiperCard />
         </div>
     </div>
   )

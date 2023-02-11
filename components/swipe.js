@@ -11,7 +11,7 @@ import Project3 from '../src/project/3.png'
 import Project4 from '../src/project/4.png'
 import {FaArrowRight, FaArrowLeft} from 'react-icons/fa'
 
-function Swipe() {
+function Swipe({}) {
   const swiper = useSwiper()
   const swiperSlide = useSwiperSlide();
   const navigationPrevRef = useRef(null)
