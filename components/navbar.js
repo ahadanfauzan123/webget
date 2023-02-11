@@ -1,11 +1,12 @@
-import React from 'react'
+import {React,Fragment,useState} from 'react'
+import { Dialog, Transition } from '@headlessui/react'
 import {SiDiscord,SiInstagram,SiFiverr} from 'react-icons/si'
 import {BsFillGearFill} from 'react-icons/bs'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {MdPeopleOutline,MdOutlinePriceChange,MdOutlinePermContactCalendar} from 'react-icons/md'
 import Link from 'next/link'
-import { useState } from 'react'
 import { useEffect } from 'react'
+import Menu from './headlessUi/Menu'
 
 function Navbar() {
   const [show, setShow] = useState(true)
@@ -26,7 +27,7 @@ function Navbar() {
     window.addEventListener('scroll',controlNavbar)
     console.log(window.scrollY)
     //return window.removeEventListener('scroll',controlNavbar)
-  }, [lastScrollY])
+  }, [lastScrollY,controlNavbar])
   return (
     <div className={`fixed w-full h-[120px] text-white flex items-center justify-center z-10 pt-4`}>
       <div className={`absolute ${!show && 'hidden'} ${background?'bg-[#d9d9d9] ':' '} w-[82%] h-[70px] opacity-50 lg:translate-y-5 rounded-xl`}/>
@@ -62,7 +63,7 @@ function Navbar() {
         </div>
         {/* when in then smaller screen */}
         <div className='sm:inline-flex lg:hidden'>
-          <BiMenuAltRight className='h-10 w-10'/>
+          <Menu />
         </div>
       </div>
     </div>

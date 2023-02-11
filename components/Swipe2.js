@@ -21,9 +21,7 @@ function Swipe2({}) {
          <Swiper
           effect={"freemode"}
           spaceBetween={10}
-          slidesPerView={1}
-          allowTouchMove={false}
-          initialSlide={0}
+          slidesPerView={2}
           navigation={{ 
             prevEl: navigationPrevRef.current,
             nextEl: navigationNextRef.current,
@@ -32,28 +30,27 @@ function Swipe2({}) {
           loop={true}
           autoplay={{ 
             delay:5000,
-            disabledOnInteract:false
            }}
-          className="mySwiper w-screen h-[300px]"
+          className="mySwiper w-[100%] h-[200px]"
         >
           <SwiperSlide virtualIndex={0} className={`relative flex items-center justify-center text-white`}>
-            <Image src={Project1} className={`absolute h-full w-full bg-cover`} />
+            <Image src={Project1} className={`absolute h-full w-full object-cover`} />
           </SwiperSlide>
           <SwiperSlide virtualIndex={0} className={`relative flex items-center justify-center text-white`}>
-            <Image src={Project2} className={`absolute h-full w-full bg-cover`} />
+            <Image src={Project2} className={`absolute h-full w-full object-cover`} />
           </SwiperSlide>
           <SwiperSlide virtualIndex={0} className={`relative flex items-center justify-center text-white`}>
-            <Image src={Project3} className={`absolute h-full w-full bg-cover`} />
+            <Image src={Project3} className={`absolute h-full w-full object-cover`} />
           </SwiperSlide>
           <SwiperSlide virtualIndex={0} className={`relative flex items-center justify-center text-white`}>
-            <Image src={Project4} className={`absolute h-full w-full bg-cover`} />
+            <Image src={Project4} className={`absolute h-full w-full object-cover`} />
           </SwiperSlide>
         </Swiper>
         <div className='absolute bottom-14 flex items-center justify-between w-[52%] h-[100px] z-[50]'>
-          <button className='z-50 flex items-center justify-center bg-white h-[50px] w-[50px] p-4 rounded-[50%] cursor-pointer' ref={navigationPrevRef}>
+          <button className='z-50 flex items-center justify-center bg-white h-[50px] w-[50px] p-4 rounded-[50%] cursor-pointer' onClick={() => navigationPrevRef}>
             <FaArrowLeft className='text-xl text-[#68626296]' />
           </button>
-          <button className='z-50 flex items-center justify-center bg-white h-[50px] w-[50px] p-4 rounded-[50%] cursor-pointer' ref={navigationNextRef}>
+          <button className='z-50 flex items-center justify-center bg-white h-[50px] w-[50px] p-4 rounded-[50%] cursor-pointer' onClick={() => navigationNextRef}>
             <FaArrowRight className='text-xl text-[#68626296]' />
           </button>
         </div>

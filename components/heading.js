@@ -1,5 +1,8 @@
 import React from 'react'
 import {BiMouse} from 'react-icons/bi'
+import 'atropos/css'
+// import Atropos component
+import Atropos from 'atropos/react';
 
 function Heading() {
   return (
