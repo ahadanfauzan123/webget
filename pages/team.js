@@ -22,7 +22,7 @@ import { BiGlobe } from 'react-icons/bi'
 
 function Team() {
   return (
-    <div className='bg-gradient-to-r from-gray-800 to-gray-900'>
+    <div className='bg-theme'>
         {/* navbar */}
         <Navbar />
         {/* main */}

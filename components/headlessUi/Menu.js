@@ -29,7 +29,7 @@ function Menu() {
                     leaveFrom="opacity-100"
                     leaveTo="opacity-0"
                     >
-                    <div className='fixed inset-0 bg-black bg-opacity-25'></div>
+                    <div className='fixed inset-0 bg-black bg-opacity-10'></div>
                 </Transition.Child>
                 <div className='fixed inset-0 overflow-y-auto'>
                     <div className="flex min-h-full items-center justify-center text-center">
@@ -42,7 +42,7 @@ function Menu() {
                         leaveFrom="opacity-100 scale-100"
                         leaveTo="opacity-0 scale-95"
                     >
-                        <Dialog.Panel className="flex flex-col items-center justify-center w-screen h-screen transform overflow-hidden bg-black opacity-[0.94] p-6 align-middle transition-all">
+                        <Dialog.Panel className="flex flex-col items-center justify-center w-screen h-screen transform overflow-hidden bg-black opacity-[0.90] p-6 align-middle transition-all">
                             
                             <div className="mt-2">
                                 <ul className='space-y-7'>
